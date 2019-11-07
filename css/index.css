@@ -1,1 +1,219 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'ZCOOL XiaoWei';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('ZCOOL XiaoWei Regular'), local('ZCOOLXiaoWei-Regular'), url(https://fonts.gstatic.com/s/zcoolxiaowei/v5/i7dMIFFrTRywPpUVX9_RJyM1UFWaGw.ttf) format('truetype');
+}
+li {
+  margin-top: 1rem;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  height: 100%;
+  margin: 5%;
+  padding: 1%;
+  border: 1px solid white;
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+nav {
+  margin: 20px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40%;
+}
+@media (max-width: 500px) {
+  nav {
+    margin: 5px 0;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40%;
+    font-size: 1.5rem;
+  }
+}
+nav a {
+  color: blue;
+  font-size: 1.7rem;
+}
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background: #e641e6;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .top-section img {
+    display: none;
+  }
+}
+.top-section .contact {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  margin-right: 250px;
+}
+.mid-section {
+  color: green;
+}
+.mid-section h1 {
+  margin-bottom: 1rem;
+}
+.bottom-section {
+  display: flex;
+  margin-top: 2%;
+  color: blue;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}
+footer {
+  color: black;
+  background-color: gray;
+  height: 20px;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .top-section .contact {
+    margin-left: 100px;
+  }
+}

@@ -21,7 +21,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -32,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -50,10 +47,130 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+}
+	
+// My codes start here
+
+// Google font
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
+
+// variables
+@main-background-color:rgb(230, 65, 230);
+@main-color:blue;
+@accent-color:green;
+
+@main-font-size:2.5rem;
+@heading-font-size:2rem;
+@body-font-size:1.5rem;
+
+@body-font:'ZCOOL XiaoWei', serif;
+
+// mixing
+.center(){
+	display: flex;
+	justify-content: center;
 }
 
-html, body {
-    height: 100%;
+li {
+	margin-top: 1rem;
+  }
+
+html {
+	height: 100%;
+	font-size: 62.5%; 
+}
+  
+body {
+	height: 100%;
+	margin: 5%;
+	padding: 1%;
+	border: 1px solid white;
+	font-family: @body-font; 
+	font-size: @body-font-size;
+}
+
+h1{
+	font-size: @heading-font-size;
+	margin-bottom: 1rem;
+}
+
+
+nav {
+	margin: 20px 0;
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 40%;
+	
+	
+		@media (max-width: 500px){
+			margin: 5px 0;
+			padding: 5px 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-left: 40%;
+			font-size: @body-font-size;
+		}
+
+	a{
+	color: blue;
+	font-size: 1.7rem;
+	}
+}
+
+
+.top-section{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	background: @main-background-color;
+	margin-bottom: 2%;
+
+		@media (max-width: 500px){
+			img{
+			display: none;
+			}
+		}
+
+	.contact{
+		font-size: @main-font-size;
+		display: flex;
+		align-items: center;
+		margin-right: 250px;
+	}
+}
+
+
+.mid-section{
+	color: @accent-color;
+	h1{
+		margin-bottom: 1rem;
+	}
+}
+
+
+.bottom-section{
+	display: flex;
+	margin-top: 2%;
+	color: @main-color;
+}
+
+.footer{
+	.center();
+	}
+footer{
+	color: black;
+	background-color: gray;
+	height: 20px;
+	margin-top: 5%;
+	}
+
+
+@media (max-width: 500px){
+.top-section .contact{
+	margin-left: 100px;
+	}
 }
 
